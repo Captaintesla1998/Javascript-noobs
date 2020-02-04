@@ -24,10 +24,10 @@ function sameCheck2(arr1,arr2){
    
    var frequencycounter1= {};
    var frequencycounter2= {};
-   for(let val in arr1){
+   for(let val of arr1){
       frequencycounter1[val] = (frequencycounter1[val] || 0) + 1
    }
-   for(let val in arr2){
+   for(let val of arr2){
       frequencycounter2[val] = (frequencycounter2[val] || 0) + 1
    }
    console.log(frequencycounter1);
