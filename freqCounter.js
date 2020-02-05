@@ -16,6 +16,9 @@ console.log(sameCheck([1,2,6,7,7],[49,49,1,4,36]))
 // ----------------------------------------------------------
 // O(n^2)
 
+
+// 1)FREQUENCY COUNTER
+
 // ----------------------------------------------------------
 function sameCheck2(arr1,arr2){
     if (arr1.length !== arr2.length){
@@ -42,3 +45,23 @@ function sameCheck2(arr1,arr2){
    }
    return true
 }
+
+// 2)MULTIPLE POINTER TECHNIQUE
+
+function  countUniques(arr){
+   if(arr.length ===0) return 0;
+    let i=0;
+    for(let j=1;j<arr.length;j++){
+        if(arr[i] !== arr[j]){
+            i++;
+            arr[i] = arr[j];
+        }
+    }
+    return i+1;
+}
+
+
+// 3) SLIDING WINDOW PATTERN -- looking for a subset which is contitnuous in some way
+
+
+
