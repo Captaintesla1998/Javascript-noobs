@@ -1,5 +1,5 @@
 CHALLENGES SECTION 
-(1)sameFrequency
+//#Challenge 1- sameFrequency
 
 function sameFrequency(num1,num2){
 	let a = num1.toString();
@@ -25,7 +25,7 @@ function sameFrequency(num1,num2){
 	return true;
 }
 
-#CHALLENGE2
+//#CHALLENGE2
 function areThereDuplicates(){
 	let collection = {};
 	for(let val of arguments.toString()){
@@ -39,7 +39,7 @@ function areThereDuplicates(){
 	}
 }
 
-#CHALLENGE3
+//#CHALLENGE3
 function isSubSequence(str1, str2){
 	if(!str1) return true;
 	let i=0;
